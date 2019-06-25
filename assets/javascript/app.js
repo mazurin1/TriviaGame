@@ -1,3 +1,26 @@
+//start quiz
+//set Timer 2 minutes
+function start() {
+
+    $('#quiz').show();
+
+    var timeout = 120;
+    var windowTimeout = setInterval(function () {
+        timeout--;
+        $("#showNumber").html("Time Remaining: " + timeout);
+
+    }, 1000);
+}
+
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#countdownTimer');
+    startTimer(fiveMinutes, display);
+};
+
+
+//10 questions, 4 possible answers, 1 correct answer
 var myQuestions = [
     {
         question: "only interested in mainstream or popular things",
@@ -100,3 +123,18 @@ var myQuestions = [
         correctAnswer: 'b'
     },
 ];
+
+function questions() {
+
+}
+
+//score
+var score = function () {
+    if (input === correctAnswer) {
+        correct = correctAns + 1;
+        alert("Correct!");
+    } else {
+        incorrect = incorrectAns + 1;
+        alert("incorrect")
+    }
+}

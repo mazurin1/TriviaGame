@@ -1,3 +1,11 @@
 ul {
     list-style: none;
-};
+}
+
+#quiz {
+    display: none;
+}
+
+#results {
+    display: none;
+}

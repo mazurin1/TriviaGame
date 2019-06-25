@@ -11,87 +11,98 @@
 
 <body>
 
-    <div id ="quiz"></div>
     <h1>Do you know your slang?</h1>
 
-    <ul>Question 1: only interested in mainstream or popular things
-        <li>a: basic</li>
-        <li>b: woke</li>
-        <li>c: slay</li>
-        <li>d: ratchet</li>
-    </ul>
+    <button onClick="start();">Start Quiz!</button>
+    <div id="countdownTimer"></div>
+    <div id="showNumber"></div>
 
-    <ul>Question 2: really cool
-        <li>a: shook</li>
-        <li>b: dank</li>
-        <li>c: savage</li>
-        <li>d: trill</li>
-    </ul>
+    <div id="quiz">
+        <ul>Question 1: only interested in mainstream or popular things
+            <li><input type="radio" name="q1" value="a"> basic<br></li>
+            <li><input type="radio" name="q1" value="b"> woke<br></li>
+            <li><input type="radio" name="q1" value="c"> slay<br></li>
+            <li><input type="radio" name="q1" value="d"> ratchet<br></li>
+        </ul>
 
-    <ul>Question 3: to be honest
-        <li>a: TBH</li>
-        <li>b: FOMO</li>
-        <li>c: TFW</li>
-        <li>d: GMT</li>
-    </ul>
+        <ul>Question 2: really cool
+            <li><input type="radio" name="q2" value="a"> shook<br></li>
+            <li><input type="radio" name="q2" value="b"> dank<br></li>
+            <li><input type="radio" name="q2" value="c"> savage<br></li>
+            <li><input type="radio" name="q2" value="d"> trill<br></li>
+        </ul>
 
-    <ul>Question 4: when you are angry because you are so hungry
-        <li>a: bougie</li>
-        <li>b: suh</li>
-        <li>c: cray</li>
-        <li>d: hangry</li>
-    </ul>
+        <ul>Question 3: to be honest
+            <li><input type="radio" name="q3" value="a"> TBH<br></li>
+            <li><input type="radio" name="q3" value="b"> FOMO<br></li>
+            <li><input type="radio" name="q3" value="c"> TFW<br></li>
+            <li><input type="radio" name="q3" value="d"> GMT<br></li>
+        </ul>
 
-    <ul>Question 5: someone from a higher class
-        <li>a: bougie</li>
-        <li>b: Gucci</li>
-        <li>c: squad</li>
-        <li>d: GOAT</li>
-    </ul>
+        <ul>Question 4: when you are angry because you are so hungry
+            <li><input type="radio" name="q4" value="a"> bougie<br></li>
+            <li><input type="radio" name="q4" value="b"> suh<br></li>
+            <li><input type="radio" name="q4" value="c"> cray<br></li>
+            <li><input type="radio" name="q4" value="d"> hangry<br></li>
+        </ul>
 
-    <ul>Question 6: a group of friends
-        <li>a: squad</li>
-        <li>b: goals</li>
-        <li>c: hunty</li>
-        <li>d: bae</li>
-    </ul>
+        <ul>Question 5: someone from a higher class
+            <li><input type="radio" name="q5" value="a"> bougie<br></li>
+            <li><input type="radio" name="q5" value="b"> Gucci<br></li>
+            <li><input type="radio" name="q5" value="c"> squad<br></li>
+            <li><input type="radio" name="q5" value="d"> GOAT<br></li>
+        </ul>
 
-    <ul>Question 7: upgrade appearance to a better version and enhance looks
-        <li>a: lit</li>
-        <li>b: fierce</li>
-        <li>c: glow up</li>
-        <li>d: thicc</li>
-    </ul>
+        <ul>Question 6: a group of friends
+            <li><input type="radio" name="q6" value="a"> squad<br></li>
+            <li><input type="radio" name="q6" value="b"> goals<br></li>
+            <li><input type="radio" name="q6" value="c"> hunty<br></li>
+            <li><input type="radio" name="q6" value="d"> bae<br></li>
+        </ul>
 
-    <ul>Question 8: to be bitter about something or someone
-        <li>a: skurt</li>
-        <li>b: throw shade</li>
-        <li>c: salty</li>
-        <li>d: roasted</li>
-    </ul>
+        <ul>Question 7: upgrade appearance to a better version and enhance looks
+            <li><input type="radio" name="q7" value="a"> lit<br></li>
+            <li><input type="radio" name="q7" value="b"> fierce<br></li>
+            <li><input type="radio" name="q7" value="c"> glow up<br></li>
+            <li><input type="radio" name="q7" value="d"> thicc<br></li>
+        </ul>
 
-    <ul>Question 9: used to describe people having bigger body parts that are bigger than usual
-        <li>a: thicc</li>
-        <li>b: lit</li>
-        <li>c: bop</li>
-        <li>d: curve</li>
-    </ul>
+        <ul>Question 8: to be bitter about something or someone
+            <li><input type="radio" name="q8" value="a"> skurt<br></li>
+            <li><input type="radio" name="q8" value="b"> throw shade<br></li>
+            <li><input type="radio" name="q8" value="c"> salty<br></li>
+            <li><input type="radio" name="q8" value="d"> roasted<br></li>
+        </ul>
 
-    <ul>Question 10: to give someone a nasty look or say something unpleasant about them
-        <li>a: straight fire</li>
-        <li>b: throw shade</li>
-        <li>c: sip tea</li>
-        <li>d: low key</li>
-    </ul>
+        <ul>Question 9: used to describe people having bigger body parts that are bigger than usual
+            <li><input type="radio" name="q9" value="a"> thicc<br></li>
+            <li><input type="radio" name="q9" value="b"> lit<br></li>
+            <li><input type="radio" name="q9" value="c"> bop<br></li>
+            <li><input type="radio" name="q9" value="d"> curve<br></li>
+        </ul>
 
-    <button id="results">SEE RESULTS!</button>
-    <div id="results"></div>
+        <ul>Question 10: to give someone a nasty look or say something unpleasant about them
+            <li><input type="radio" name="q10" value="a"> straight fire<br></li>
+            <li><input type="radio" name="q10" value="b"> throw shade<br></li>
+            <li><input type="radio" name="q10" value="c"> sip tea<br></li>
+            <li><input type="radio" name="q10" value="d"> low key<br></li>
+        </ul>
+
+        <input class="btn btn-primary" type="submit" value="Submit">
+
+    </div>
+
+    <div id="results">
+        <div>Correct Answers <span id="correct-answers">0</span></div>
+        <div>Incorrect Answers <span id="incorrect-answers">0</span></div>
+        <div>Unanswered <span id="unanswered">0</span></div>
+    </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Script -->
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 
