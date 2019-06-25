@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+
+#quiz {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+body {
+    background-image: url(https://visualcocaine.org/public/uploads/large/191511256585cqdqkzydbm7l2ou5sa8g0xblubzlqckq1l6kysyg8bds2fbt2hciq45njxeztbotnby4hihs0q2ydarrsmw4pthbvpe89mnf4pzs.jpg);
+    background-size: 250px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Do you know your 2019 slang?</h1>
+
+    <button onClick="start();">Start Quiz!</button>
+    <div id="countdownTimer"></div>
+    <div id="showNumber"></div>
+    
+    <div id="quiz">
+        <ul>Question 1: only interested in mainstream or popular things
+            <li><input type="radio" id="q1" name="q1" value="a"> basic<br></li>
+            <li><input type="radio" id="q1" name="q1" value="b"> woke<br></li>
+            <li><input type="radio" id="q1" name="q1" value="c"> slay<br></li>
+            <li><input type="radio" id="q1" name="q1" value="d"> ratchet<br></li>
+        </ul>
+
+        <ul>Question 2: really cool
+            <li><input type="radio" id="q2" name="q2" value="a"> shook<br></li>
+            <li><input type="radio" id="q2" name="q2" value="b"> dank<br></li>
+            <li><input type="radio" id="q2" name="q2" value="c"> savage<br></li>
+            <li><input type="radio" id="q2" name="q2" value="d"> trill<br></li>
+        </ul>
+
+        <ul>Question 3: to be honest
+            <li><input type="radio" id="q3" name="q3" value="a"> TBH<br></li>
+            <li><input type="radio" id="q3" name="q3" value="b"> FOMO<br></li>
+            <li><input type="radio" id="q3" name="q3" value="c"> TFW<br></li>
+            <li><input type="radio" id="q3" name="q3" value="d"> GMT<br></li>
+        </ul>
+
+        <ul>Question 4: when you are angry because you are so hungry
+            <li><input type="radio" id="q4" name="q4" value="a"> bougie<br></li>
+            <li><input type="radio" id="q4" name="q4" value="b"> suh<br></li>
+            <li><input type="radio" id="q4" name="q4" value="c"> cray<br></li>
+            <li><input type="radio" id="q4" name="q4" value="d"> hangry<br></li>
+        </ul>
+
+        <ul>Question 5: someone from a higher class
+            <li><input type="radio" id="q5" name="q5" value="a"> bougie<br></li>
+            <li><input type="radio" id="q5" name="q5" value="b"> Gucci<br></li>
+            <li><input type="radio" id="q5" name="q5" value="c"> squad<br></li>
+            <li><input type="radio" id="q5" name="q5" value="d"> GOAT<br></li>
+        </ul>
+
+        <ul>Question 6: a group of friends
+            <li><input type="radio" id="q6" name="q6" value="a"> squad<br></li>
+            <li><input type="radio" id="q6" name="q6" value="b"> goals<br></li>
+            <li><input type="radio" id="q6" name="q6" value="c"> hunty<br></li>
+            <li><input type="radio" id="q6" name="q6" value="d"> bae<br></li>
+        </ul>
+
+        <ul>Question 7: upgrade appearance to a better version and enhance looks
+            <li><input type="radio" id="q7" name="q7" value="a"> lit<br></li>
+            <li><input type="radio" id="q7" name="q7" value="b"> fierce<br></li>
+            <li><input type="radio" id="q7" name="q7" value="c"> glow up<br></li>
+            <li><input type="radio" id="q7" name="q7" value="d"> thicc<br></li>
+        </ul>
+
+        <ul>Question 8: to be bitter about something or someone
+            <li><input type="radio" id="q8" name="q8" value="a"> skurt<br></li>
+            <li><input type="radio" id="q8" name="q8" value="b"> throw shade<br></li>
+            <li><input type="radio" id="q8" name="q8" value="c"> salty<br></li>
+            <li><input type="radio" id="q8" name="q8" value="d"> roasted<br></li>
+        </ul>
+
+        <ul>Question 9: used to describe people having bigger body parts that are bigger than usual
+            <li><input type="radio" id="q9" name="q9" value="a"> thicc<br></li>
+            <li><input type="radio" id="q9" name="q9" value="b"> lit<br></li>
+            <li><input type="radio" id="q9" name="q9" value="c"> bop<br></li>
+            <li><input type="radio" id="q9" name="q9" value="d"> curve<br></li>
+        </ul>
+
+        <ul>Question 10: to give someone a nasty look or say something unpleasant about them
+            <li><input type="radio" id="q10" name="q10" value="a"> straight fire<br></li>
+            <li><input type="radio" id="q10" name="q10" value="b"> throw shade<br></li>
+            <li><input type="radio" id="q10" name="q10" value="c"> sip tea<br></li>
+            <li><input type="radio" id="q10" name="q10" value="d"> low key<br></li>
+        </ul>
+
+        <input class="btn btn-primary" type="submit" onclick="endGame()" value="Submit">
+
+    </div>
+
+    <div id="results">
+        <div>Correct Answers <span id="correct-answers">0</span></div>
+        <div>Incorrect Answers <span id="incorrect-answers">0</span></div>
+        <div>Unanswered <span id="unanswered">0</span></div>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
